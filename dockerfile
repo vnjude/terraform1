@@ -1,3 +1,14 @@
-from Ubuntu
-mkdir devops2
-cd devops
+# from base image node
+FROM node:8.11-slim
+
+ENV workdirectory /usr/node
+
+WORKDIR $workdirectory
+WORKDIR app
+
+COPY package.json .
+
+RUN ls -l
+
+# command executable and version
+ENTRYPOINT ["node"]
