@@ -1,7 +1,7 @@
 # from base image node
 FROM node:8.11-slim
 
-ENV workdirectory /usr/node
+ENV workdirectory /usr/node1
 
 WORKDIR $workdirectory
 WORKDIR app
